@@ -1,0 +1,14 @@
+name: 'KeepAlive'
+on:
+    schedule: 
+        - cron: "*/10 * * * *"
+
+
+jobs:
+  report_requesting:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: hello
+        run: |
+          echo hey! i'm alive :)
